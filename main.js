@@ -25,8 +25,9 @@ button.addEventListener("click", () => {
 
 
     getWeatherByCity(city,(weatherData)=>{
-        //console.log (weatherData)
+        console.log (weatherData)
         card.append(makeWeatherCard(consolidate(weatherData)))
+        // card.append(makeWeatherCard(consolidate(weatherData)))
         
     })
     getPictureByCity(city, (data)=>{
@@ -40,6 +41,9 @@ button.addEventListener("click", () => {
     // getPictureByCity(city, cityData=>{
     //     console.log(cityData)
     // })
+
+    getBrew(city)
+    
     
      
    

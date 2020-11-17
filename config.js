@@ -5,6 +5,6 @@ export default {
         citySearch: proxy + "https://www.metaweather.com/api/location/search/",
         weather: proxy + `https://www.metaweather.com/api/location/`,
         picture: "https://api.teleport.org/api/urban_areas/slug:",
-        brewery : 'https://api.openbrewerydb.org/breweries?by_city='
+        brewery: 'https://api.openbrewerydb.org/breweries?by_city='
     }
 }
