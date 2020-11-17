@@ -51,20 +51,33 @@
                 let r = JSON.parse(res);
                 console.log(r);
 
+                let weatherDictionary = [
+                Snow : "sn",
+                Sleet : "sl",
+                Hail : "h",
+                Thunderstorm : "t",
+                Heavy Rain : "hr",
+                Light Rain : "lr",
+                Showers : "s",
+                Heavy Cloud : "hc",
+                Light Cloud : "lc",
+                Clear : "c"
+                ];
+
                 const makeCard = (weat) => {
                   let card = document.createElement("div");
                   let weatherCity = document.createElement("h2");
                   weatherCity.innerText = `${r.title}`;
+                  let weather = document.createElement("h3");
+                  weather.innerText = `${weat.weather_state_name}`;
                   let img = document.createElement("img");
-                  img.innerText = `${weat.weather_state_name}`;
-                  // let img = document.createElement("img");
-                  // let wimg =
+                  let wimg = 
                   // if (weat.weather_state_name === "Clear") {
                   //   img.src =
                   //     `https://www.metaweather.com/static/img/weather/ico/${wimg}.ico`;
                   // }
 
-                  //  if else (weat.weather_state_name === "Snow") {
+                  //  if else weat.weather_state_name === "Snow" {
                   //     img.src =
                   //     "https://www.metaweather.com/static/img/weather/ico/sn.ico";
                   // };
@@ -113,7 +126,7 @@
                   remove.innerText = "X";
 
                   //insert info into card
-                  card.append(remove, weatherCity, weather);
+                  card.append(remove, weatherCity, weather, img);
 
                   //event listener to remove cards onclick
                   remove.addEventListener("click", (evt) => {
