@@ -1,36 +1,35 @@
 
 import {makeWeatherCard} from "./makeCard.js"
 import {getWeatherByCity} from "./getWeather.js"
+import { getPictureByCity } from "./getCityPic.js";
+import {consolidate} from "./importantDataFunction.js"
+import {makePictureCard} from "./addCityImage.js"
+import {getPic} from "./backgroundPic.js"
 import {makeElement} from "./make-element.js"
 
 let button = document.querySelector("button");
 
-const consolidate = (whatever) =>{
-    let output = {
-
-        state : whatever.consolidated_weather[0].weather_state_name,
-        abbr : whatever.consolidated_weather[0].weather_state_abbr
-        
-    }
-    return output;
-}
 
 button.addEventListener("click", () => {
     let city = document.querySelector("#city").value;
+    //this could be a function
+    let card = document.createElement('div')
+    card.classList.add('card')
+    document.body.append(card)
+    
     getWeatherByCity(city,(weatherData)=>{
+
+        card.append(makeWeatherCard(consolidate(weatherData)))
         
-        makeWeatherCard(consolidate(weatherData))
     })
-})
-
-document.body.append(makeElement("card", "this is a new card" ))
-`https://www.metaweather.com/static/img/weather/ico/${data[0]}.ico`;
-
-
-// let card = makeCard(
-//     r.consolidated_weather[0],
-//     r.title[0]
-//     //weatherImage
-// );
-// document.body.append(card);
+    getPictureByCity(city, (data)=>{
+        card.style.backgroundImage = `url(${data.photos[0].image.web})`
+    })
+    // getPictureByCity(city, cityData=>{
+    //     console.log(cityData)
+    // })
+    
+     
+   
+});
 
