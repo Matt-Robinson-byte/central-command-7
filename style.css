@@ -47,6 +47,7 @@ img {
   width: 100vw;
   height: 70vh;
   background-image: url("PICS/homePage.jpeg");
+  padding-bottom: ;
 }
 .buttom_pix {
   display: flex;
