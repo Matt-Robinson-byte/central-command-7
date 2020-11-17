@@ -17,7 +17,13 @@ button.addEventListener("click", () => {
     let card = document.createElement('div')
     card.classList.add('card')
     document.body.append(card)
-    
+
+
+    let breweryCard = document.createElement('div')
+    breweryCard.classList.add('breweryCard')
+    document.body.append(breweryCard)
+
+
     getWeatherByCity(city,(weatherData)=>{
         console.log (weatherData)
         card.append(makeWeatherCard(consolidate(weatherData)))
@@ -26,6 +32,11 @@ button.addEventListener("click", () => {
     })
     getPictureByCity(city, (data)=>{
         card.style.backgroundImage = `url(${data.photos[0].image.web})`
+    })
+
+    
+    getBrew(city,(breweries) =>{
+        breweryCard.innerHTML.append(breweries.name)
     })
     // getPictureByCity(city, cityData=>{
     //     console.log(cityData)
