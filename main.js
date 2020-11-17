@@ -3,6 +3,7 @@ import {makeWeatherCard} from "./makeCard.js"
 import {getWeatherByCity} from "./getWeather.js"
 import { getPictureByCity } from "./getCityPic.js";
 import {consolidate} from "./importantDataFunction.js"
+import {getBrew} from "./brew.js"
 // import {makePictureCard} from "./addCityImage.js"
 // import {getPic} from "./backgroundPic.js"
 // import {makeElement} from "./make-element.js"
@@ -18,8 +19,9 @@ button.addEventListener("click", () => {
     document.body.append(card)
     
     getWeatherByCity(city,(weatherData)=>{
-        //console.log (weatherData)
+        console.log (weatherData)
         card.append(makeWeatherCard(consolidate(weatherData)))
+        // card.append(makeWeatherCard(consolidate(weatherData)))
         
     })
     getPictureByCity(city, (data)=>{
@@ -28,6 +30,9 @@ button.addEventListener("click", () => {
     // getPictureByCity(city, cityData=>{
     //     console.log(cityData)
     // })
+
+    getBrew(city)
+    
     
      
    
