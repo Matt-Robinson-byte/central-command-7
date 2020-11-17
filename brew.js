@@ -1,12 +1,22 @@
-const url_api = 'https://api.openbrewerydb.org/breweries?by_city=Atlanta'
 
-async function getBrew(){
-    const response = await fetch(url_api);
-    const data = await response.json();
-    const {name} = data;
+import config from "./config.js"
 
-    console.log(name);
-
+export const getBrew = (city) =>{
+    fetch(config.urls.brewery + `${city}`)
+    .then(res => res.json())
+    .then(data => console.log(data))
+    // .then(res => res.json())
+    // .then(data => console.log(data))
 }
 
-getBrew();
+
+// getBrew();
+
+// import config from "./config.js"
+// export const getWeatherByCity = (city,callback) =>{
+//     fetch (config.urls.citySearch + `?query=${city}`)
+//     .then(res => res.json())
+//     .then(data => fetch(config.urls.weather + data[0].woeid))
+//     .then(res => res.json())
+//     .then(data => callback(data))
+// }

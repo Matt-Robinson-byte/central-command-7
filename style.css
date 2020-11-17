@@ -1,6 +1,7 @@
+/* Header style controls white band on top**** */
 .header {
   display: flex;
-
+  font-size: xx-large;
   font-size: small;
   background-color: white;
   padding-top: 20px;
@@ -8,6 +9,18 @@
   padding-left: 20px;
   margin: 0px;
 }
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px;
+  transition: 0.3s;
+  padding-right: 4px;
+}
+a:hover {
+  font-size: 1.4em;
+}
+
 .header2 {
   flex: 1;
 }
@@ -17,8 +30,7 @@
   padding-right: 20px;
 }
 
-img{
-
+img {
   background-color: bisque;
   padding: 1.5em;
   margin: 20px;
@@ -27,17 +39,6 @@ img{
   border-width: 10px;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 0px;
-  transition: 0.3s;
-  padding-right: 4px;
-}
-a:hover {
-  font-size: 1.4em;
-}
 .container_front {
   position: relative;
   top: -60px;
@@ -45,8 +46,7 @@ a:hover {
   background-size: cover;
   width: 100vw;
   height: 70vh;
-
-  background-image: url("PICS/hawaiiPic2.png");
+  background-image: url("PICS/homePage.jpeg");
 }
 .buttom_pix {
   display: flex;
@@ -64,9 +64,20 @@ a:hover {
 }
 p {
   color: white;
+  font-size: 15px;
 }
 aside {
   position: relative;
   top: 50px;
   left: 20px;
+}
+.card {
+  border: solid black 1px;
+  min-width: 300px;
+  min-height: 50vh;
+  background-size: cover;
+}
+
+.inquiry {
+  font-size: 25px;
 }
