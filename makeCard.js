@@ -16,7 +16,6 @@ import {makeElement} from "./make-element.js"
 
 export const makeWeatherCard = (data) =>{
     console.log(data.temp)
-    return( makeElement("img",`https://www.metaweather.com/static/img/weather/ico/${data.abbr}.ico` ))
-    
+    return makeElement("img",`https://www.metaweather.com/static/img/weather/ico/${data.abbr}.ico`, data.temp)
     
 }
