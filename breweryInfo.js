@@ -1,4 +1,5 @@
-export const breweryInfo = (whatever) =>{
+export const breweryInfo = (...whatever) =>{
+    
     let output = {
 
         name : whatever.name[0],
