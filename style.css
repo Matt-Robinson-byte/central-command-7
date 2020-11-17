@@ -1,1 +1,69 @@
+.header {
+  display: flex;
 
+  font-size: small;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin: 0px;
+}
+.header2 {
+  flex: 1;
+}
+.header3 {
+  flex: 2;
+  text-align: end;
+  padding-right: 20px;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0px;
+  transition: 0.3s;
+  padding-right: 4px;
+}
+a:hover {
+  font-size: 1.4em;
+}
+.container_front {
+  position: relative;
+  top: -60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+
+  background-image: url("PICS/hawaiiPic2.png");
+}
+.buttom_pix {
+  display: flex;
+}
+.footer {
+}
+.span {
+}
+.body {
+  background-color: black;
+  margin: 0em;
+}
+.home {
+  display: flex;
+}
+p {
+  color: white;
+}
+aside {
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+
+/* Set the size of the div element that contains the Google map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
