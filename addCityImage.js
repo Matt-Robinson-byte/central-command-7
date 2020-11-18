@@ -1,5 +1,5 @@
 // import {config} from "./config.js"
-import { makeElement } from "./make-element.js"
+//import { makeElement } from "./make-element.js"
 
 export const makePictureCard = (data) =>{
     let newDiv = document.createElement('div')

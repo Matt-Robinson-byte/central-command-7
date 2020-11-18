@@ -1,10 +1,11 @@
 
 import config from "./config.js"
 
-export const getBrew = (city) =>{
+export const getBrew = (city, callback) =>{
     fetch(config.urls.brewery + `${city}`)
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => callback(data))
+
     // .then(res => res.json())
     // .then(data => console.log(data))
 }
