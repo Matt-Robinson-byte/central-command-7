@@ -17,7 +17,7 @@ export const makeWeatherCard = (data) =>{
     //creates div for icon div and temperature div
     let var3 = document.createElement('div')
     icon.src = `https://www.metaweather.com/static/img/weather/ico/${data.abbr}.ico`
-    var3.append(var2,closeButton,var1)
+    var3.append(var2,var1)
     return(var3)
    
     //
