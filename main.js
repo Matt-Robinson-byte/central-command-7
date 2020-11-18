@@ -1,6 +1,5 @@
-
-import {makeWeatherCard} from "./makeCard.js"
-import {getWeatherByCity} from "./getWeather.js"
+import { makeWeatherCard } from "./makeCard.js";
+import { getWeatherByCity } from "./getWeather.js";
 import { getPictureByCity } from "./getCityPic.js";
 import {consolidate} from "./importantDataFunction.js"
 import {getBrew} from "./brew.js"
@@ -58,4 +57,3 @@ button.addEventListener("click", () => {
      
    
 });
-
