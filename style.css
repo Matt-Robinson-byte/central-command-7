@@ -79,7 +79,7 @@ aside {
   left: 0;
   border: solid black 1px;
   min-width: 100%;
-  min-height: 50vh;
+  min-height: 70vh;
   background-size: cover;
   padding-top: 0vh;
 }
@@ -100,4 +100,65 @@ aside {
   height: 4.9vh;
   width: 28vw;
   font-size: 1.4em;
+}
+.temperature {
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+}
+
+.closebutton {
+  position: absolute;
+  top: 2vh;
+  left: 92vw;
+}
+ul {
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  color: white;
+  font-size: 1.35em;
+  line-height: 40px;
+}
+
+.contactUs {
+  position: relative;
+  top: -40px;
+  left: -7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+  background-image: url("PICS/ContacUsPic.jpg");
+  padding-bottom: 0px;
+  margin-bottom: 0em;
+}
+
+.about {
+  position: relative;
+  top: -40px;
+  left: -7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+  background-image: url("PICS/aboutPic.webp");
+  padding-bottom: 0px;
+  margin-bottom: 0em;
+}
+
+.aboutHeader {
+  position: relative;
+  top: 5vh;
+  left: 15px;
+  font-size: 40px;
+}
+
+.aboutContent {
+  position: relative;
+  top: 10vh;
+  left: 15px;
+  font-size: 25px;
+  flex-wrap: wrap;
+  margin-right: 1em;
 }
