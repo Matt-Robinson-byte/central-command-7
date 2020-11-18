@@ -19,7 +19,7 @@ export const makeWeatherCard = (data) =>{
     closeButton.className = 'closebutton'
     closeButton.addEventListener('click', doClose)
     let var3 = document.createElement('div')
-    var2.src = `https://www.metaweather.com/static/img/weather/ico/${data.abbr}.ico`
+    icon.src = `https://www.metaweather.com/static/img/weather/ico/${data.abbr}.ico`
     var3.append(var2,closeButton,var1)
     return(var3)
    
