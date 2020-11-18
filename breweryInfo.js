@@ -1,7 +1,7 @@
+
+// adds first five breweries in the input city from brewery api
 export const breweryInfo = (whatever) =>{
-    console.log(whatever[0])
-    // for (i = 0; i < whatever.length; i++){
-    //     if (whatever.addr && i < 4) 
+    
     let output = [
         {
         name : whatever[0].name,

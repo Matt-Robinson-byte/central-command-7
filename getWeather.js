@@ -1,3 +1,5 @@
+
+//gets weather api resources
 import config from "./config.js";
 export const getWeatherByCity = (city, callback) => {
   fetch(config.urls.citySearch + `?query=${city}`)

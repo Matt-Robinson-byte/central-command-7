@@ -1,6 +1,5 @@
-//import {getBrew} from "./brew.js"
-import {consolidate} from "./importantDataFunction.js"
 
+//creates an HTML list and populates them with the breweries
 export const breweriesInCity = (city, beerType)=>{
     
     let breweryList = document.createElement("ul")
@@ -9,8 +8,6 @@ export const breweriesInCity = (city, beerType)=>{
     let listItem3 = document.createElement('li')
     let listItem4 = document.createElement('li')
     let listItem5 = document.createElement('li')
-
-    // breweryList.innerHTML = `With the current weather in ${city[0].city} we suggest getting a pint at one of the following local breweries`
 
     listItem1.append(`${city[0].name}   ${city[0].addr}`)
     

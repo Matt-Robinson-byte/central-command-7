@@ -13,14 +13,19 @@ let button = document.querySelector("button");
 let checkCard = false;
 //adds event listener to city input and submit button
 button.addEventListener("click", () => {
+
+    //creates and adds close button (x) and adds it to new card
+    let closeButton = document.createElement('button')
+    closeButton.innerHTML = "X"
+    closeButton.className = 'closebutton'
+    closeButton.addEventListener('click', doClose)
     
     let city = document.querySelector("#city").value;
-    //document.write(encodeURIComponent(city.trim()));
     
     //adds button and input to body
     let card = document.createElement('div')
     card.classList.add('card')
-    
+    card.append(closeButton)
     
     document.body.append(card)
 
@@ -38,7 +43,7 @@ button.addEventListener("click", () => {
         card.style.backgroundImage = `url(${data.photos[0].image.web})`
     })
 
-
+    //creates and adds the list of breweries to the card
     getBrew(city,(brewery)=>{
         card.append(breweriesInCity(breweryInfo(brewery)))
         
