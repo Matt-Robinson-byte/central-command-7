@@ -53,7 +53,8 @@ button.addEventListener("click", () => {
         card.append(breweriesInCity(breweryInfo(brewery)))
     })
     
-    
-     
    
 });
+
+
+

@@ -5,6 +5,9 @@ export const getBrew = (city, callback) =>{
     fetch(config.urls.brewery + `${city}`)
     .then(res => res.json())
     .then(data => callback(data))
+    .catch(error => {
+        console.error("Error:", error);
+    })
 
     // .then(res => res.json())
     // .then(data => console.log(data))
