@@ -53,7 +53,11 @@ export const weatherBreweryRelation = (input) =>{
             beerType = "We suggest a light lager on this clear day";
             break;
         }
-        return (`${beerType}! Try this recommendation at one of these local breweries`)
+        let message = document.createElement("div")
+        message.classList.add("beerMessage")
+
+        message.append(`${beerType}! Try this recommendation at one of these local breweries`)
+        return message
         // Snow  sn
         // Sleet sl
         // Hail h
@@ -64,11 +68,6 @@ export const weatherBreweryRelation = (input) =>{
         // Heavy Cloud hc
         // Light Cloud lc
         // Clear c
-
-
-
-
-
 
 }
     
