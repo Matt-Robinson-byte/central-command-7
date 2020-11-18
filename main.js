@@ -6,12 +6,14 @@ import {getBrew} from "./brew.js"
 import {breweryInfo} from "./breweryInfo.js"
 import {breweriesInCity} from "./makeBreweryCard.js"
 import {weatherBreweryRelation} from "./make-element.js"
+import {doClose} from "./make-element.js"
 
 
 let button = document.querySelector("button");
-
+let checkCard = false;
 //adds event listener to city input and submit button
 button.addEventListener("click", () => {
+    
     let city = document.querySelector("#city").value;
     //document.write(encodeURIComponent(city.trim()));
     
@@ -51,7 +53,7 @@ button.addEventListener("click", () => {
         
         
     })
-   
+
 });
 
 
