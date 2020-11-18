@@ -8,8 +8,9 @@ export const makeWeatherCard = (data) =>{
     //creates span for icon and temperature
     let var1 = document.createElement('div')
     var1.classList = "temperature"
-    var1.innerHTML = f
+    var1.innerHTML = `${f}°`
     let var2 = document.createElement("img")
+    var2.classList = "temp"
 
     //creates 'close' button for city card
     let closeButton = document.createElement('button')
