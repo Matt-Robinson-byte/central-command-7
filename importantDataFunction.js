@@ -1,3 +1,4 @@
+//takes only some information from the weather api and returns it
 export const consolidate = (whatever) =>{
     let output = {
 
@@ -5,6 +6,6 @@ export const consolidate = (whatever) =>{
         abbr : whatever.consolidated_weather[0].weather_state_abbr,
         temp: whatever.consolidated_weather[0].the_temp
     }
-   // console.log(output.abbr)
+   
     return output;
 }
