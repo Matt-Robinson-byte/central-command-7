@@ -13,7 +13,7 @@
 
 
 export const doClose = function (btn) {
-    btn.currentTarget.parentNode.remove()
+    btn.card.remove()
 }
 
 export const weatherBreweryRelation = (input) =>{

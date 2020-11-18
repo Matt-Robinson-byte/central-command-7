@@ -9,26 +9,20 @@ export const makeWeatherCard = (data) =>{
     let var1 = document.createElement('div')
     var1.classList = "temperature"
     var1.innerHTML = `${f}°`
-    let var2 = document.createElement("img")
-    var2.classList = "temp"
-
+    let var2 = document.createElement('div')
+    var2.classList.add('iconHolder')
+    let icon = document.createElement("img")
+    var2.append(icon)
     //creates 'close' button for city card
     let closeButton = document.createElement('button')
     closeButton.innerHTML = "X"
     closeButton.className = 'closebutton'
     closeButton.addEventListener('click', doClose)
-    
-
-    // let breweryList = document.createElement("ul")
-    // getBrew(city,(breweries) =>{
-    //     breweryList.innerHTML.append(breweries[0].name)
-    // })
-    
-    
-    //creates icon and appends to city card
+    let var3 = document.createElement('div')
     var2.src = `https://www.metaweather.com/static/img/weather/ico/${data.abbr}.ico`
-    var1.append(var2,closeButton)
-    return(var1)
+    var3.append(var2,closeButton,var1)
+    return(var3)
+   
     //
 }
 
