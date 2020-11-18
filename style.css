@@ -9,16 +9,17 @@
   padding-left: 20px;
   margin: 0px;
 }
+/* Controls the links on the headers so it hoovers and transition effect */
 a {
   color: black;
   text-decoration: none;
   font-size: 20px;
   margin: 0px;
   transition: 0.3s;
-  padding-right: 4px;
+  padding-right: 6px;
 }
 a:hover {
-  font-size: 1.4em;
+  font-size: 2.4em;
 }
 
 .header2 {
@@ -29,16 +30,15 @@ a:hover {
   text-align: end;
   padding-right: 20px;
 }
-
+/* controls the weather icon */
 img {
-  background-color: bisque;
+  background-color: white;
   padding: 1.5em;
   margin: 20px;
-  border: 3px solid blue;
   border-radius: 50%;
   border-width: 10px;
 }
-
+/* controls the main container for the title, input, and submit button */
 .container_front {
   position: relative;
   top: -60px;
@@ -47,38 +47,57 @@ img {
   width: 100vw;
   height: 70vh;
   background-image: url("PICS/homePage.jpeg");
-  padding-bottom: ;
+  padding-bottom: 0px;
+  margin-bottom: 0em;
 }
-.buttom_pix {
-  display: flex;
-}
-.footer {
-}
+
 .span {
+  color: white;
+  font-size: 15px;
 }
+/* sets the background and margins */
 .body {
-  background-color: black;
+  background-color: white;
   margin: 0em;
 }
-.home {
-  display: flex;
-}
+
 p {
   color: white;
   font-size: 15px;
 }
+/* position of content in the main container */
 aside {
   position: relative;
   top: 50px;
-  left: 20px;
+  left: 50px;
 }
+/* card settings and position */
 .card {
+  display: flex;
+  position: absolute;
+  top: 77vh;
+  left: 0;
   border: solid black 1px;
-  min-width: 300px;
+  min-width: 100%;
   min-height: 50vh;
   background-size: cover;
+  padding-top: 0vh;
 }
 
 .inquiry {
   font-size: 25px;
+  flex-wrap: wrap;
+  margin-right: 1em;
+}
+/* input field */
+.city {
+  height: 4vh;
+  width: 40vw;
+  font-size: 1.4em;
+}
+/* submit button */
+.button {
+  height: 4.9vh;
+  width: 28vw;
+  font-size: 1.4em;
 }
