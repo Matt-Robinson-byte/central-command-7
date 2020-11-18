@@ -5,16 +5,16 @@ import {consolidate} from "./importantDataFunction.js"
 import {getBrew} from "./brew.js"
 import {breweryInfo} from "./breweryInfo.js"
 import {breweriesInCity} from "./makeBreweryCard.js"
+import {weatherBreweryRelation} from "./make-element.js"
 
-// import {makePictureCard} from "./addCityImage.js"
-// import {getPic} from "./backgroundPic.js"
-// import {makeElement} from "./make-element.js"
 
 let button = document.querySelector("button");
 
 //adds event listener to city input and submit button
 button.addEventListener("click", () => {
     let city = document.querySelector("#city").value;
+    //document.write(encodeURIComponent(city.trim()));
+    
     //adds button and input to body
     let card = document.createElement('div')
     card.classList.add('card')
@@ -22,16 +22,12 @@ button.addEventListener("click", () => {
     
     document.body.append(card)
 
-    //ignore for right now --> will add breweries
-    // let breweryCard = document.createElement('div')
-    // breweryCard.classList.add('breweryCard')
-    // document.body.append(breweryCard)
-
+    
     //takes json into consolidate--> temp, state, and weathr state and creates icon and temperature
     getWeatherByCity(city,(weatherData)=>{
-        //console.log (weatherData)
+      
         card.append(makeWeatherCard(consolidate(weatherData)))
-        // card.append(makeWeatherCard(consolidate(weatherData)))
+       
         
     })
 
@@ -40,20 +36,23 @@ button.addEventListener("click", () => {
         card.style.backgroundImage = `url(${data.photos[0].image.web})`
     })
 
-    //card.append(breweriesInCity())
-    
-    // getBrew(city,(breweries) =>{
-    //     breweryCard.innerHTML.append(breweries.name)
-    // })
-    // getPictureByCity(city, cityData=>{
-    //     console.log(cityData)
-    // })
 
     getBrew(city,(brewery)=>{
         card.append(breweriesInCity(breweryInfo(brewery)))
+        
+       
     })
     
-    
-     
+   // weatherBreweryRelation(getWeatherByCity(consolidate(weather)))
+    getWeatherByCity(city,(weatherData)=>{
+        let rec = weatherBreweryRelation((consolidate(weatherData)))
+        
+        card.append(rec)
+        
+        
+    })
    
 });
+
+
+

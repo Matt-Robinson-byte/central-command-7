@@ -4,5 +4,10 @@ export const getWeatherByCity = (city, callback) => {
     .then((res) => res.json())
     .then((data) => fetch(config.urls.weather + data[0].woeid))
     .then((res) => res.json())
-    .then((data) => callback(data));
+    .then((data) => callback(data))
+    .catch(error => {
+      console.error("Error:", error);
+  });
+    
+
 };
