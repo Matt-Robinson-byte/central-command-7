@@ -1,6 +1,6 @@
 
 //creates an HTML list and populates them with the breweries
-export const breweriesInCity = (city, beerType)=>{
+export const breweriesInCity = (brewery)=>{
     
     let breweryList = document.createElement("ul")
     let listItem1 = document.createElement('li')
@@ -9,15 +9,15 @@ export const breweriesInCity = (city, beerType)=>{
     let listItem4 = document.createElement('li')
     let listItem5 = document.createElement('li')
 
-    listItem1.append(`${city[0].name}   ${city[0].addr}`)
+    listItem1.append(`${brewery[0].name}   ${brewery[0].addr}`)
     
-    listItem2.append(`${city[1].name}   ${city[1].addr}`)
+    listItem2.append(`${brewery[1].name}   ${brewery[1].addr}`)
     
-    listItem3.append(`${city[2].name}   ${city[2].addr}`)
+    listItem3.append(`${brewery[2].name}   ${brewery[2].addr}`)
 
-    listItem4.append(`${city[3].name}   ${city[3].addr}`)
+    listItem4.append(`${brewery[3].name}   ${brewery[3].addr}`)
     
-    listItem5.append(`${city[4].name}   ${city[4].addr}`)
+    listItem5.append(`${brewery[4].name}   ${brewery[4].addr}`)
     breweryList.append(listItem1,listItem2, listItem3,listItem4,listItem5)
     return breweryList
 }
