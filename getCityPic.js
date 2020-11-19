@@ -18,7 +18,7 @@ export const getPictureByCity = (city,card) =>{
 
 let picCallback =  (data,card)=>{
         
-        let cityPic = document.createElement('img2')
+        let cityPic = document.createElement('div')
         
         cityPic.style.background = `url(${data.photos[0].image.web})`
         cityPic.classList.add("background")
