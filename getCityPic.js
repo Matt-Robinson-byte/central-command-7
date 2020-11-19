@@ -18,7 +18,7 @@ export const getPictureByCity = (city,card) =>{
 
 let picCallback =  (data,card)=>{
         
-        let cityPic = document.createElement('div')
+        let cityPic = document.createElement('img2')
         
         cityPic.style.background = `url(${data.photos[0].image.web})`
         cityPic.classList.add("background")
@@ -26,5 +26,8 @@ let picCallback =  (data,card)=>{
         card.append(cityPic)
 }
 let picError = (card)=>{
-    card.style.backgroundImage = "./PICS/noBrewFound.jpg"
+    let noBrewPic = document.createElement('div')
+    noBrewPic.style.background = 'url(https://spaceselectors.com/wp-content/uploads/2019/07/breweries-colorado-lease.jpg)'
+   card.append(noBrewPic)
 }
+
