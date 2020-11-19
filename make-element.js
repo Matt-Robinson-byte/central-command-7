@@ -46,7 +46,7 @@ export const weatherBreweryRelation = (input) =>{
         let message = document.createElement("div")
         message.classList.add("beerMessage")
 
-        message.append(`${beerType}! Try this recommendation at one of these local breweries`)
+        message.append(`${beerType}! Try this recommendation at one of these local breweries:`)
         return message
       
 }

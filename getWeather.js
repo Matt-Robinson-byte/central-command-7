@@ -39,7 +39,7 @@ let tryBlock = (weatherData,card)=>{
 let noWeather = (card)=>{
   let defaultWeather = document.createElement('div')
     defaultWeather.classList.add('defaultWeather')
-    defaultWeather.innerHTML = "no weather suggestions for this area"
+    defaultWeather.innerHTML = "No weather available for this area."
     card.append(defaultWeather)
 }
 let appendBeerSuggestion = (weatherData,card)=>{

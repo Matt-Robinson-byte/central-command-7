@@ -20,7 +20,7 @@ let brewCallback = (brewery,card)=>{
     }catch(BananaError){
         let defaultMessage = document.createElement('div')
         defaultMessage.classList.add('defaultMessage')
-        defaultMessage.innerHTML = "no brewery suggestions for this area"
+        defaultMessage.innerHTML = "No brewery suggestions for this area."
         card.append(defaultMessage)
         //card.innnerHTML = ("no brewery suggestions for this area")
     }
