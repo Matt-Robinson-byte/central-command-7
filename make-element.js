@@ -1,11 +1,11 @@
 
 
 
-
+//close function for the (x) close button
 export const doClose = function (btn) {
     btn.currentTarget.parentNode.remove()
 }
-
+//function for displaying specific brew suggestion depending on weather of city
 export const weatherBreweryRelation = (input) =>{
         var beerType;
         console.log(input)
