@@ -26,5 +26,5 @@ let picCallback =  (data,card)=>{
         card.append(cityPic)
 }
 let picError = (card)=>{
-    card.style.backgroundImage = 'url(https://image.shutterstock.com/image-photo/equipment-preparation-beer-260nw-1008782098.jpg)'
+    card.style.backgroundImage = "./PICS/noBrewFound.jpg"
 }
