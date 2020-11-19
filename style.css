@@ -220,8 +220,24 @@ ul {
   flex-wrap: wrap;
   margin-right: 1em;
 }
-
+/* adjusts the card background image */
 .background {
+  background-size: cover;
   width: 100%;
-  min-height: 70vh;
+  /* height: 100%;
+  z-index: -1; */
+}
+.defaultMessage {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  height: 3em;
+  border: solid;
+}
+.defaultWeather {
+  height: 3em;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  border: solid;
 }
