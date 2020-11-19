@@ -28,7 +28,8 @@ export const getWeatherByCity = (city, card) => {
 
 let tryBlock = (weatherData,card)=>{
   try{
-    card.append(makeWeatherCard(consolidate(weatherData)))
+    let c = card.querySelector('.weather')
+    c.append(makeWeatherCard(consolidate(weatherData)))
     return weatherData
   }
   catch(error){
@@ -40,12 +41,14 @@ let noWeather = (card)=>{
   let defaultWeather = document.createElement('div')
     defaultWeather.classList.add('defaultWeather')
     defaultWeather.innerHTML = "No weather available for this area."
-    card.append(defaultWeather)
+    let c = card.querySelector('.weather')
+    c.append(defaultWeather)
 }
 let appendBeerSuggestion = (weatherData,card)=>{
   let rec = weatherBreweryRelation((consolidate(weatherData)))
+  let r = card.querySelector('.rec')
   
-  card.append(rec)
+  r.append(rec)
   
   
 }

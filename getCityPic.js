@@ -17,13 +17,14 @@ export const getPictureByCity = (city,card) =>{
 };
 
 let picCallback =  (data,card)=>{
+    
+    card.style.backgroundImage = `url(${data.photos[0].image.web})`
+        // let cityPic = document.createElement('div')
         
-        let cityPic = document.createElement('div')
+        // cityPic.style.background = `url(${data.photos[0].image.web})`
+        // cityPic.classList.add("background")
         
-        cityPic.style.background = `url(${data.photos[0].image.web})`
-        cityPic.classList.add("background")
-        
-        card.append(cityPic)
+      //  card.append(cityPic)
 }
 let picError = (card)=>{
     let noBrewPic = document.createElement('div')

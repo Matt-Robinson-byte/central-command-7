@@ -16,12 +16,14 @@ export const getBrew = (city, card) =>{
 
 let brewCallback = (brewery,card)=>{
     try{
-    card.append(breweriesInCity(breweryInfo(brewery)))
+        let c = card.querySelector('.list')
+        c.append(breweriesInCity(breweryInfo(brewery)))
     }catch(BananaError){
         let defaultMessage = document.createElement('div')
         defaultMessage.classList.add('defaultMessage')
         defaultMessage.innerHTML = "No brewery suggestions for this area."
-        card.append(defaultMessage)
+        let c = card.querySelector('.list')
+        c.append(defaultMessage)
         //card.innnerHTML = ("no brewery suggestions for this area")
     }
 }
