@@ -14,6 +14,13 @@ button.addEventListener("click", () => {
     //adds button and input to body
     let card = document.createElement('div')
     card.classList.add('card')
+    let rec = document.createElement('div')
+    rec.classList.add('rec')
+    let list = document.createElement('div')
+    list.classList.add('list')
+    let weather = document.createElement('div')
+    weather.classList.add('weather')
+
     
     
     document.body.append(card)
@@ -24,7 +31,7 @@ button.addEventListener("click", () => {
     closeButton.innerHTML = "X"
     closeButton.className = 'closebutton'
     closeButton.addEventListener('click', doClose)
-    card.append(closeButton)
+    card.append(weather,closeButton,rec,list)
     let city = document.querySelector("#city").value;
     
     
