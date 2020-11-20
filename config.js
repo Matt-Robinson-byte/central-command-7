@@ -9,3 +9,5 @@ export default {
         brewery: 'https://api.openbrewerydb.org/breweries?by_city='
     }
 }
+
+    //picture: "https://api.teleport.org/api/urban_areas/slug:"
