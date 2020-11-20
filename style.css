@@ -96,13 +96,13 @@ aside {
 }
 /* input field */
 .city {
-  height: 4vh;
+  height: 1.4em;
   width: 40vw;
   font-size: 1.4em;
 }
 /* submit button */
 .button {
-  height: 4.9vh;
+  height: 1.8em;
   width: 28vw;
   font-size: 1.4em;
 }
