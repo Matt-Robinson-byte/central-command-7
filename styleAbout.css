@@ -1,0 +1,262 @@
+/* Header style controls white band on top**** */
+.header {
+    display: flex;
+    font-size: xx-large;
+    font-size: small;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin: 0px;
+  }
+  /* Controls the links on the headers so it hoovers and transition effect */
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px;
+    transition: 0.3s;
+    padding-right: 6px;
+  }
+  a:hover {
+    font-size: 2.4em;
+  }
+  
+  .header2 {
+    flex: 1;
+  }
+  .header3 {
+    flex: 2;
+    text-align: end;
+    padding-right: 20px;
+  }
+  /* controls the weather icon */
+  img {
+    /* position: static;
+    top: 1em;
+    left: -320px; */
+    background-color: white;
+    padding: 0.8em;
+    margin: 20px;
+    border-radius: 50%;
+    border-width: 10px;
+  }
+  /* controls the main container for the title, input, and submit button */
+  .container_front {
+    position: relative;
+    top: -60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    background-image: url("PICS/homePage.jpeg");
+    padding-bottom: 0px;
+    margin-bottom: 0em;
+  }
+  
+  .span {
+    color: white;
+    font-size: 15px;
+  }
+  /* sets the background and margins */
+  .body {
+    background-color: white;
+    margin: 0em;
+    width: 100%;
+  }
+  
+  p {
+    color: white;
+    font-size: 15px;
+  }
+  /* position of content in the main container */
+  aside {
+    position: relative;
+    top: 50px;
+    left: 50px;
+  }
+  /* card settings and position */
+  .card {
+    /* display: flex; */
+    flex-wrap: wrap;
+    position: relative;
+    top: -62.5px;
+    /* left: 0; */
+    border: solid black 1px;
+    max-width: 100%;
+    /* min-height: 70vh; */
+    background-size: cover;
+    /* padding-top: 0vh; */
+  }
+  
+  .inquiry {
+    font-size: 25px;
+    flex-wrap: wrap;
+    margin-right: 1em;
+  }
+  /* input field */
+  .city {
+    height: 4vh;
+    width: 40vw;
+    font-size: 1.4em;
+  }
+  /* submit button */
+  .button {
+    height: 4.9vh;
+    width: 28vw;
+    font-size: 1.4em;
+  }
+  .temperature {
+    /* position: relative;
+    top: -130px;
+    left: 4.8em; */
+    display: inline-block;
+    text-justify: center;
+    border: 2px;
+    color: white;
+    font-size: 6em;
+  }
+  
+  .closebutton {
+    position: absolute;
+    top: 2vh;
+    left: 92vw;
+  }
+  
+  .contactUs {
+    position: relative;
+    top: -40px;
+    left: -7px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    background-image: url("PICS/ContacUsPic.jpg");
+    padding-bottom: 0px;
+    margin-bottom: 0em;
+  }
+  
+  .contactHead {
+    position: relative;
+    top: 5vh;
+    left: 15px;
+    font-size: 50px;
+  }
+  
+  .contactCont {
+    /* position: relative; */
+    top: 10vh;
+    left: 15px;
+    font-size: 40px;
+    flex-wrap: wrap;
+    margin-right: 1em;
+  }
+  
+  .about {
+    position: relative;
+    top: -40px;
+    left: -7px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    background-image: url("PICS/aboutPic.webp");
+    padding-bottom: 0px;
+    margin-bottom: 0em;
+  }
+  
+  .aboutHeader {
+    /* position: relative;
+    top: 5vh;
+    left: 15px; */
+    font-size: 50px;
+  }
+  
+  .aboutContent {
+    /* position: relative;
+    top: 10vh;
+    left: 15px; */
+    font-size: 35px;
+    flex-wrap: wrap;
+    margin-right: 1em;
+    text-align: center;
+    padding-top: 60px;
+  }
+  
+  ul {
+    border-radius: 25px;
+    /* position: relative;
+    top: 15em;
+    left: 3%; */
+    /* margin-right: -40em; */
+    color: white;
+    font-size: 1.35em;
+    /* line-height: 40px; */
+    background-color: rgba(0, 0, 0, 0.534);
+    
+  }
+  .iconHolder {
+    /* position: relative;
+    top: 3px;
+    left: 12em; */
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+  }
+  .beerMessage {
+    display: flex;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    /* position: relative; */
+    background-color: rgba(0, 0, 0, 0.534);
+    /* top: 6em;
+    left: 180px; */
+    /* width: 100%; */
+    /* height: 93px; */
+    color: white;
+    font-size: 2.2em;
+    line-height: 42px;
+    margin-right: 5em;
+    mix-blend-mode: luminosity;
+    padding: 10px;
+  }
+  
+  .notFound {
+    font-size: 25px;
+    flex-wrap: wrap;
+    margin-right: 1em;
+  }
+  /* adjusts the card background image */
+  .background {
+    background-size: cover;
+    width: 100%;
+    /* height: 100%;
+    z-index: -1; */
+  }
+  .defaultMessage {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    height: 3em;
+    border: solid;
+  }
+  .defaultWeather {
+    height: 3em;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    border: solid;
+  }
+
+  .team {
+      border-top: 300px;
+  }
+  /* { */
+    /* border-radius: 25px;
+    margin-right: -40em;
+    color: white;
+    font-size: 1.35em;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.534);
+    /* height: 22%; */
+  /* }  */
