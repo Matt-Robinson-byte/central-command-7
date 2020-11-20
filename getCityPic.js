@@ -3,7 +3,7 @@ import config from "./config.js"
 //gets background picture from city pictures api
 export const getPictureByCity = (city,card) =>{
     
-    fetch(config.urls.picture + `${city}/images/`)
+    fetch(config.urls.picture + `${city.toLowerCase().replace(" ", "-")}/images/`)
     .then(res => res.json())
     .then(data => fetch(data._links.self.href))
     
